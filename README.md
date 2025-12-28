@@ -29,11 +29,17 @@ A Python-based **Security Configuration Assessment (SCA)** tool designed to chec
 
 ## Screenshots
 
+### WinSecureAuditor Interface
 ![WinSecureAuditor Interface](docs/images/winsecureauditor.jpg)
+*Main interface of the WinSecureAuditor tool showing the scanning options and configuration.*
 
+### HTML Report
 ![HTML Report](docs/images/report-html.jpg)
+*Example of the generated HTML report displaying compliance results, pass/fail counts, and detailed rule information.*
 
+### Vulnerability Description
 ![Vulnerability Description](docs/images/vulnerability%20description.jpg)
+*Detailed view of vulnerability descriptions and remediation guidance in the report.*
 
 ## Key Features
 
@@ -113,5 +119,6 @@ This project is licensed under the terms of the **GNU General Public License v3.
 You may use, modify, and distribute this software in compliance with the license terms.
 
 See the [LICENSE](./LICENSE) file for full license details.
+
 
 
