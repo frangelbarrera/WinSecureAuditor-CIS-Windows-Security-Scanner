@@ -1,0 +1,77 @@
+# Additional CIS Checks for Windows 10 Hardening
+# Extends the base with more Level 1 checks
+
+policy:
+  id: "cis_win10_additional"
+  file: "cis_win10_additional.yml"
+  name: "Additional CIS Checks for Windows 10"
+  description: "Extra hardening checks for Windows 10 Enterprise"
+  references:
+    - https://www.cisecurity.org/cis-benchmarks/
+
+requirements:
+  title: "Check Windows 10"
+  description: "Requires Windows 10"
+  condition: all
+  rules:
+    - 'r:HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion -> ProductName -> r:^Windows 10'
+
+checks:
+  # Additional Service Checks
+  - id: 20001
+    title: "Ensure 'Windows Push Notifications System Service' is disabled"
+    description: "This service handles push notifications; disable for security."
+    rationale: "Reduces attack surface by disabling unnecessary services."
+    remediation: "Set service to Disabled in services.msc or registry."
+    compliance:
+      - cis: ["Custom"]
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpnService -> Start -> 4'
+
+  - id: 20002
+    title: "Ensure 'Fax Service' is disabled"
+    description: "Fax service is rarely needed in modern environments."
+    rationale: "Disabling unused services improves security."
+    remediation: "Disable Fax service."
+    compliance:
+      - cis: ["Custom"]
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fax -> Start -> 4'
+
+  # Network Security Checks
+  - id: 20003
+    title: "Ensure 'Network Location Awareness' service is running"
+    description: "Required for network awareness."
+    rationale: "Necessary for proper network functionality."
+    remediation: "Ensure service is Automatic."
+    compliance:
+      - cis: ["Custom"]
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc -> Start -> 2'
+
+  # User Account Checks
+  - id: 20004
+    title: "Ensure Guest account is disabled"
+    description: "Guest account should be disabled for security."
+    rationale: "Prevents unauthorized access via Guest."
+    remediation: "Disable Guest account in lusrmgr.msc."
+    compliance:
+      - cis: ["Custom"]
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\00000301 -> F -> r:^\d+$ compare & 2 == 0'
+
+  # File System Checks
+  - id: 20005
+    title: "Ensure C:\\Windows\\System32\\config\\system exists"
+    description: "System registry hive should be present."
+    rationale: "Ensures system integrity."
+    remediation: "Verify system files are intact."
+    compliance:
+      - cis: ["Custom"]
+    condition: all
+    rules:
+      - 'f:C:\Windows\System32\config\system -> exists'
