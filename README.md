@@ -27,6 +27,14 @@ This tool is essential for organizations implementing CIS Benchmark recommendati
 
 A Python-based **Security Configuration Assessment (SCA)** tool designed to check Microsoft Windows systems against **CIS Benchmarks**. It parses `.yml` rule files (with `policy`, `requirements`, and `checks`), executes registry or file-based checks, and generates **detailed** HTML/JSON reports showing pass/fail results and compliance information.
 
+## Screenshots
+
+![WinSecureAuditor Interface](docs/images/winsecureauditor.jpg)
+
+![HTML Report](docs/images/report-html.jpg)
+
+![Vulnerability Description](docs/images/vulnerability%20description.jpg)
+
 ## Key Features
 
 - **Registry Checks**: Reads Windows registry keys/values to validate system settings.  
@@ -105,4 +113,5 @@ This project is licensed under the terms of the **GNU General Public License v3.
 You may use, modify, and distribute this software in compliance with the license terms.
 
 See the [LICENSE](./LICENSE) file for full license details.
+
 
