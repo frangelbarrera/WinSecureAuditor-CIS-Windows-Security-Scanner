@@ -1,4 +1,12 @@
 # WinSecureAuditor - CIS Windows Security Scanner
+---
+[![License: MIT](https://img.shields.io/github/license/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/commits)
+[![Issues](https://img.shields.io/github/issues/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/issues)
+[![Top Language](https://img.shields.io/github/languages/top/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
+[![Contributors](https://img.shields.io/github/contributors/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/graphs/contributors)
+[![Repo Size](https://img.shields.io/github/repo-size/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
 
 WinSecureAuditor is a comprehensive security auditing tool designed to evaluate Windows systems against the Center for Internet Security (CIS) Benchmarks. This open-source application provides organizations and security professionals with automated assessment capabilities to ensure compliance with industry-standard security configurations.
 
