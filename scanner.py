@@ -1,6 +1,5 @@
 # scanner.py - Module to handle loading, execution and evaluation of SCA rules
 
-import os
 import logging
 from typing import List
 from parser import load_all_rules

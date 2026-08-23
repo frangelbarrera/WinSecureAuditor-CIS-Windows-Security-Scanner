@@ -102,11 +102,15 @@ def evaluate_subrule(exec_result: ExecResult) -> (bool, str):
             return True, "file is missing"
         return False, f"file is present ({val})"
 
-    # Regex check: e.g. -> regex:^Windows 10
-    match = re.search(r"->\s*regex:(.+)$", sub_rule)
+    # Regex check. Wazuh SCA rules use both the long form '-> regex:^...'
+    # and the short form '-> r:^...' (the form actually used by the bundled
+    # CIS benchmarks). The sub_rule is lowercased above, so the pattern has
+    # already lost its original case: compare case-insensitively. Registry
+    # DWORD values arrive as ints, so coerce to str before matching.
+    match = re.search(r"->\s*(?:regex|r):(.+)$", sub_rule)
     if match:
         pattern = match.group(1).strip()
-        if re.match(pattern, val):
+        if re.match(pattern, str(val), re.IGNORECASE):
             return True, "regex matched"
         else:
             return False, f"regex '{pattern}' did not match '{val}'"

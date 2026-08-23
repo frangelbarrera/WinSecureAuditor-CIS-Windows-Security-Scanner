@@ -36,7 +36,7 @@ def execute_subrule(sub_rule: str) -> ExecResult:
         return ExecResult(sub_rule, "", f"Unknown prefix in {sub_rule}")
 
 def read_registry(sub_rule: str) -> ExecResult:
-    """
+    r"""
     Example sub_rule: r:HKLM\Software\Microsoft -> SomeKey -> regex:^....
     We'll parse out the hive (HKLM/HKCU/HKU/HKCR/HKEY_LOCAL_MACHINE, etc.)
     """
@@ -69,7 +69,7 @@ def read_registry(sub_rule: str) -> ExecResult:
         return ExecResult(sub_rule, "", f"Registry error: {e}")
 
 def split_hive(reg_path: str):
-    """
+    r"""
     Splits "HKLM\Software\MyKey" into ("HKLM", "Software\MyKey").
     If no backslash found, path_str might be empty.
     """
@@ -97,7 +97,7 @@ def get_hive(hive_str: str):
         raise ValueError(f"Unsupported hive: {hive_str}")
 
 def check_file(sub_rule: str) -> ExecResult:
-    """
+    r"""
     e.g. f:C:\Windows\System32\notepad.exe -> exists
     We'll just see if the file is present. 
     """
