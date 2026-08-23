@@ -6,8 +6,8 @@ the essential workflow so your changes land quickly.
 ## Development setup
 
 ```bash
-git clone https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner.git
-cd WinSecureAuditor-CIS-Windows-Security-Scanner
+git clone https://github.com/frangelbarrera/WinSecureAuditor.git
+cd WinSecureAuditor
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
