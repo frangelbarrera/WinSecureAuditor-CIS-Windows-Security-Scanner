@@ -1,13 +1,13 @@
 # WinSecureAuditor - CIS Windows Security Scanner
 ---
-[![License: MIT](https://img.shields.io/github/license/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/commits)
-[![Issues](https://img.shields.io/github/issues/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/issues)
-[![Top Language](https://img.shields.io/github/languages/top/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
-[![Contributors](https://img.shields.io/github/contributors/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/graphs/contributors)
-[![Repo Size](https://img.shields.io/github/repo-size/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
-[![CI](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/frangelbarrera/WinSecureAuditor?style=flat-square)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor/commits)
+[![Issues](https://img.shields.io/github/issues/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor/issues)
+[![Top Language](https://img.shields.io/github/languages/top/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor)
+[![Contributors](https://img.shields.io/github/contributors/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor/graphs/contributors)
+[![Repo Size](https://img.shields.io/github/repo-size/frangelbarrera/WinSecureAuditor?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor)
+[![CI](https://github.com/frangelbarrera/WinSecureAuditor/actions/workflows/ci.yml/badge.svg)](https://github.com/frangelbarrera/WinSecureAuditor/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square)](https://www.python.org/downloads/)
 [![Tests](https://img.shields.io/badge/tests-pytest%20%7C%20ubuntu%20%2B%20windows-brightgreen?style=flat-square)](tests/)
 
