@@ -7,6 +7,9 @@
 [![Top Language](https://img.shields.io/github/languages/top/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
 [![Contributors](https://img.shields.io/github/contributors/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/graphs/contributors)
 [![Repo Size](https://img.shields.io/github/repo-size/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner?style=flat-square)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner)
+[![CI](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/frangelbarrera/WinSecureAuditor-CIS-Windows-Security-Scanner/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square)](https://www.python.org/downloads/)
+[![Tests](https://img.shields.io/badge/tests-pytest%20%7C%20ubuntu%20%2B%20windows-brightgreen?style=flat-square)](tests/)
 
 WinSecureAuditor is a comprehensive security auditing tool designed to evaluate Windows systems against the Center for Internet Security (CIS) Benchmarks. This open-source application provides organizations and security professionals with automated assessment capabilities to ensure compliance with industry-standard security configurations.
 
