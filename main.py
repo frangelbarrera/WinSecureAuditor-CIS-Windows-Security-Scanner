@@ -6,7 +6,6 @@ import os
 import logging
 
 from scanner import Scanner
-from scoring import calculate_basic_score
 from reporter import (
     write_enhanced_json_report,
     write_enhanced_html_report

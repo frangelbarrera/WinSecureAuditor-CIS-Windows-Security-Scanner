@@ -30,7 +30,7 @@ class WinSecureAuditorApp:
     def is_admin(self):
         try:
             return ctypes.windll.shell32.IsUserAnAdmin()
-        except:
+        except Exception:
             return False
 
     def create_widgets(self):
@@ -106,7 +106,8 @@ class WinSecureAuditorApp:
             # Update GUI in main thread
             self.root.after(0, self.update_results)
         except Exception as e:
-            self.root.after(0, lambda: messagebox.showerror("Error", f"Scan failed: {e}"))
+            msg = f"Scan failed: {e}"
+            self.root.after(0, lambda: messagebox.showerror("Error", msg))
         finally:
             self.root.after(0, self.progress.stop)
             self.root.after(0, lambda: self.scan_button.config(state=tk.NORMAL))

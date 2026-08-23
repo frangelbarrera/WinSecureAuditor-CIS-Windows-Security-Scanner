@@ -4,7 +4,7 @@ import os
 import glob
 import yaml
 from typing import List
-from sca_structs import SCAFile, Rule, PolicyBlock, RequirementsBlock
+from sca_structs import SCAFile, Rule
 
 def load_sca_file(file_path: str) -> SCAFile:
     """Parse a single .yml file into an SCAFile object."""
